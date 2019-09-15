@@ -46,10 +46,10 @@
 
   <main>
 
-  <h1>Девайс - интернет-магазин гаджетов</h1>
+  <h1 class="visually-hidden">Девайс - интернет-магазин гаджетов</h1>
 
     <section>
-      <h2>Новые товары</h2>
+      <h2 class="visually-hidden">Новые товары</h2>
       <ul>
         <li>
           <div><img src="img/slider-1.png" alt="Селфи-палка" width="384" height="486"></div>
@@ -109,7 +109,7 @@
     </section>
 
     <section>
-      <h2>Популярные товары</h2>
+      <h2 class="visually-hidden">Популярные товары</h2>
       <ul>
         <li>
           <div>
@@ -151,7 +151,7 @@
     </section>
 
     <section>
-      <h2>Сервисы</h2>
+      <h2 class="visually-hidden">Сервисы</h2>
       <ul>
         <li><a href="">Доставка</a></li>
         <li><a href="">Гарантия</a></li>
@@ -189,7 +189,7 @@
     </section>
 
     <section>
-      <h2>Бренды</h2>
+      <h2 class="visually-hidden">Бренды</h2>
       <ul>
         <li><div><a href="#"><img src="img/brend-1.png" alt="Бренд-1" width="260" height="100"></a></div></li>
         <li><div><a href="#"><img src="img/brend-2.png" alt="Бренд-2" width="260" height="100"></a></div></li>
@@ -253,6 +253,34 @@
 
       <div><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип HTML Academy" width="27" height="35"></a></div>
   </footer>
+
+  <section>
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form action="" method="POST">
+      <label for="name">
+        <p>Ваше имя</p>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+      </label>
+      <label for="email">
+        <p>Ваш e-mail:</p>
+        <input type="email" name="email" id="email" placeholder="email@example.com">
+      </label>
+      <label for="letter">
+        <p>Текст письма</p>
+        <textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
+      </label>
+      <div><button type="submit">Отправить</button></div>
+    </form>
+    <button type="button">Закрыть</button>
+  </section>
+
+  <section>
+    <h2 class="visually-hidden">Как к нам проехать</h2>
+    <div>
+      <img src="img/map-big.jpg" alt="Большая-карта местоположения офиса Девайс" width="960" height="559">
+    </div>
+    <button type="button">Закрыть</button>
+  </section>
 </body>
 
 </html>

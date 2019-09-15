@@ -54,12 +54,52 @@
     </ol>
 
     <section>
-      <h2>Фильтр товаров</h2>
-      <!--Здесь будет форма-->
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <p>Фильтр:</p>
+      <form action="" method="POST">
+        <div>
+          <p>Стоимость</p>
+          <label>
+            <input type="range" name="range">
+          </label>
+        </div>
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li>
+              <label><input type="checkbox" name="black" checked>Черный</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="white">Белый</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="blue" checked>Синий</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="red" cheked>Красный</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li>
+              <label><input type="radio" name="bluetooth" value="yes" checked>Есть</label>
+            </li>
+            <li>
+              <label><input type="radio" name="bluetooth" value="no">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </section>
 
     <section>
-      <h2>Сортировка товаров</h2>
+      <h2 class="visually-hidden">Сортировка товаров</h2>
       <p>Сортировка:</p>
       <ul>
         <li><a href="#">По цене</a></li>
@@ -71,8 +111,7 @@
     </section>
 
     <section>
-      <h2>Список моноподов</h2>
-
+      <h2 class="visually-hidden">Список моноподов</h2>
       <ul>
         <li>
           <article>
