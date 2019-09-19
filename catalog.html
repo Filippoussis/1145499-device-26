@@ -4,27 +4,30 @@
 <head>
   <meta charset="utf-8">
   <title>Девайс - интернет-магазин гаджетов</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <nav>
-        <div><a href="index.html"><img src="img/logo-device-black.svg" alt="Логотип Девайс черного цвета" width="164" height="36"></a></div>
+  <header class="main-header">
+    <nav class="main-navigation">
 
-        <form>
+        <div class="logo"><a href="index.html"><img src="img/logo-device-black.svg" alt="Логотип Девайс черного цвета" width="164" height="36"></a></div>
+
+        <form class="search">
           <input type="search" name="search" placeholder="Поиск по сайту">
         </form>
 
-        <ul>
+        <ul class="user-navigation">
           <li><a href="#">Валентин Петухов</a></li>
-          <li><a href="#">Выйти</a></li>
+          <li class="out"><a href="#">Выйти</a></li>
           <li><a href="#">Сравнить</a></li>
           <li><a href="#">Корзина</a></li>
         </ul>
 
-        <ul>
+        <ul class="catalog">
           <li><a href="#">Каталог товаров</a>
-            <ul>
+            <ul class="catalog-menu">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камеры</a></li>
@@ -35,7 +38,7 @@
           </li>
         </ul>
 
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -47,13 +50,15 @@
   <main>
 
     <h1>Моноподы для селфи</h1>
-    <ol>
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="#">Каталог товаров</a></li>
-      <li>Моноподы для селфи</li>
-    </ol>
+    <div class="breadcrumbs">
+      <ol>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#">Каталог товаров</a></li>
+        <li>Моноподы для селфи</li>
+      </ol>
+    </div>
 
-    <section>
+    <section class="filter">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <p>Фильтр:</p>
       <form action="https://echo.htmlacademy.ru" method="POST">
@@ -98,7 +103,7 @@
       </form>
     </section>
 
-    <section>
+    <section class="sort">
       <h2 class="visually-hidden">Сортировка товаров</h2>
       <p>Сортировка:</p>
       <ul>
@@ -110,66 +115,67 @@
       </ul>
     </section>
 
-    <section>
+    <section class="list-items">
       <h2 class="visually-hidden">Список моноподов</h2>
       <ul>
         <li>
           <article>
             <h3><a href="#">Любительская селфи-палка</a></h3>
-            <span>500 руб.</span>
+            <span class="cost">500 руб.</span>
             <div><img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380"></div>
           </article>
         </li>
         <li>
           <article>
             <h3><a href="#">Профессиональная селфи-палка</a></h3>
-            <span>1500 руб.</span>
+            <span class="cost">1500 руб.</span>
             <div><img src="img/item-2.jpg" alt="Любительская селфи-палка" width="360" height="380"></div>
           </article>
         </li>
         <li>
           <article>
             <h3><a href="#">Непотопляемая селфи-палка</a></h3>
-            <span>2500 руб.</span>
+            <span class="cost">2500 руб.</span>
             <div><img src="img/item-3.jpg" alt="Любительская селфи-палка" width="360" height="380"></div>
           </article>
         </li>
         <li>
           <article>
             <h3><a href="#">Селфи-палка <q>Следуй за мной</q></a></h3>
-            <span>4900 руб.</span>
+            <span class="cost">4900 руб.</span>
             <div><img src="img/item-4.jpg" alt="Любительская селфи-палка" width="360" height="380"></div>
           </article>
         </li>
       </ul>
     </section>
 
-    <ul>
-      <li><a href="#">Назад</a></li>
+    <div class="pagination">
+      <ul>
+        <li><a href="#">Назад</a></li>
 
-      <li>
-        <ol>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-        </ol>
-      </li>
+        <li>
+          <ol>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ol>
+        </li>
 
-      <li><a href="#">Вперед</a></li>
-    </ul>
-
+        <li><a href="#">Вперед</a></li>
+      </ul>
+    </div>
   </main>
 
-  <footer>
+  <footer class="main-footer">
 
     <div>
-      <div>
-        <div><a href="index.html"><img src="img/logo-yellow.svg" alt="Логотип Девайс желтого цвета" width="164" height="36"></a></div>
+      <div class="logo">
+        <a href="index.html"><img src="img/logo-yellow.svg" alt="Логотип Девайс желтого цвета" width="164" height="36"></a>
       </div>
 
-      <ul>
+      <ul class="user-navigation">
         <li><a href="#">Валентин Петухов</a></li>
-        <li><a href="#">Выйти</a></li>
+        <li class="out"><a href="#">Выйти</a></li>
         <li><a href="#">Сравнить</a></li>
         <li><a href="#">Корзина</a></li>
       </ul>
@@ -177,7 +183,7 @@
 
     <div>
       <p>г. Москва, ул. Строителей, 15</p>
-      <ul>
+      <ul class="site-navigation">
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
@@ -185,13 +191,13 @@
       <p>Тел.: +7(495)495-95-95</p>
     </div>
 
-    <ul>
-      <li><div><a href="#"><img src="img/fb.svg" alt="Facebook" width="32" height="32">Facebook</a></div></li>
-      <li><div><a href="#"><img src="img/instagram.svg" alt="Instagram" width="32" height="32">Instagram</a></div></li>
-      <li><div><a href="#"><img src="img/twitter.svg" alt="Twitter" width="32" height="32">Twitter</a></div></li>
+    <ul class="socials">
+      <li><div><a href="#"><img src="img/fb.svg" alt="Facebook" width="32" height="32" aria-label="Facebook"></a></div></li>
+      <li><div><a href="#"><img src="img/instagram.svg" alt="Instagram" width="32" height="32" aria-label="Instagram"></a></div></li>
+      <li><div><a href="#"><img src="img/twitter.svg" alt="Twitter" width="32" height="32" aria-label="Twitter"></a></div></li>
     </ul>
 
-    <div><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип HTML Academy" width="27" height="35"></a></div>
+    <div class="logo-html"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип HTML Academy" width="27" height="35"></a></div>
   </footer>
 
 </body>
