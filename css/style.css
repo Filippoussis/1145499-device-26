@@ -320,3 +320,22 @@ body {
 .main-footer .out a:active {
   color: rgba(255, 255, 255, 0.3);
 }
+
+.main-link {
+  height: 40px;
+  width: 220px;
+  text-align: center;
+  background-image:
+    linear-gradient(transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+  transition-duration: 50ms;
+}
+
+.main-link a {
+  vertical-align: bottom;
+  display: inline-block;
+}
+
+.main-link:hover {
+  background-color: #f0c52e;
+}
+
