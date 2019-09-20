@@ -322,17 +322,18 @@ body {
 }
 
 .main-link {
+  padding: 5px;
   height: 40px;
   width: 220px;
   text-align: center;
+  vertical-align: middle;
   background-image:
     linear-gradient(transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
   transition-duration: 50ms;
 }
 
 .main-link a {
-  vertical-align: bottom;
-  display: inline-block;
+
 }
 
 .main-link:hover {
