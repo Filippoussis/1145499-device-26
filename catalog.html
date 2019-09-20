@@ -12,44 +12,50 @@
   <header class="main-header">
     <nav class="main-navigation">
 
-        <div class="logo"><a href="index.html"><img src="img/logo-device-black.svg" alt="Логотип Девайс черного цвета" width="164" height="36"></a></div>
+        <div class="logo">
+          <a href="index.html"><img src="img/logo-device-black.svg" alt="Логотип Девайс черного цвета" width="164" height="36"></a>
+        </div>
 
-        <form class="search">
-          <input type="search" name="search" placeholder="Поиск по сайту">
-        </form>
+        <div class="user-navigation">
+            <ul class="search">
+              <li>
+                <form >
+                  <input type="search" name="search" placeholder="Поиск по сайту">
+                </form>
+              </li>
+            </ul>
+            <ul class="user-menu">
+              <li><a href="#">Валентин Петухов</a></li>
+              <li class="out"><a href="#">Выйти</a></li>
+              <li><a href="#">Сравнить</a></li>
+              <li><a href="#">Корзина</a></li>
+            </ul>
+          </div>
 
-        <ul class="user-navigation">
-          <li><a href="#">Валентин Петухов</a></li>
-          <li class="out"><a href="#">Выйти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
-
-        <ul class="catalog">
-          <li><a href="#">Каталог товаров</a>
+          <div class="site-navigation">
             <ul class="catalog-menu">
+              <li><a href="#">Каталог товаров</a></li>
+            </ul>
+            <ul class="catalog-submenu">
               <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="catalog.html">Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камеры</a></li>
               <li><a href="#">Фитнес-браслеты</a></li>
               <li><a href="#">Умные часы</a></li>
               <li><a href="#">Квадрокоптеры</a></li>
             </ul>
-          </li>
-        </ul>
-
-        <ul class="site-navigation">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-
+            <ul class="site-menu">
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
     </nav>
   </header>
 
   <main>
 
-    <h1>Моноподы для селфи</h1>
+    <h1 class="page-title">Моноподы для селфи</h1>
     <div class="breadcrumbs">
       <ol>
         <li><a href="index.html">Главная</a></li>
@@ -115,7 +121,7 @@
       </ul>
     </section>
 
-    <section class="list-items">
+    <section class="gallery">
       <h2 class="visually-hidden">Список моноподов</h2>
       <ul>
         <li>
@@ -173,7 +179,7 @@
         <a href="index.html"><img src="img/logo-yellow.svg" alt="Логотип Девайс желтого цвета" width="164" height="36"></a>
       </div>
 
-      <ul class="user-navigation">
+      <ul class="user-menu">
         <li><a href="#">Валентин Петухов</a></li>
         <li class="out"><a href="#">Выйти</a></li>
         <li><a href="#">Сравнить</a></li>
@@ -183,7 +189,7 @@
 
     <div>
       <p>г. Москва, ул. Строителей, 15</p>
-      <ul class="site-navigation">
+      <ul class="site-menu">
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
