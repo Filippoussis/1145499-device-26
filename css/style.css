@@ -97,6 +97,7 @@ body {
 .breadcrumbs li,
 .pagination li,
 .sort li,
+.filter li,
 .gallery li {
   list-style: none;
 }
@@ -119,7 +120,11 @@ body {
 .contacts h2,
 .page-title,
 .gallery h3,
-.gallery a {
+.gallery a,
+.caption,
+.legend,
+.pagination a,
+.button {
   font-family: "Gilroy", "Gill Sans", sans-serif;
   font-size: 18px;
   font-weight: 900;
@@ -138,7 +143,11 @@ body {
 .catalog-menu a,
 .site-menu a,
 .main-link a,
-.services a {
+.services a,
+.caption,
+.prev a,
+.next a,
+.button {
   text-transform: uppercase;
 }
 
@@ -151,7 +160,11 @@ body {
 .site-menu a:hover,
 .site-menu a:focus,
 .gallery a:hover,
-.gallery a:focus {
+.gallery a:focus,
+.pages li:first-of-type a:hover,
+.pages li:first-of-type a:hover,
+.pages li:not(:first-of-type) a:hover,
+.pages li:not(:first-of-type) a:hover {
   color: rgba(0, 0, 0, 0.6)
 }
 
@@ -159,22 +172,18 @@ body {
 .catalog-menu a:active,
 .catalog-submenu a:active,
 .site-menu a:active,
-.gallery a:hover {
+.gallery a:active,
+.prev a:active,
+.next a:active,
+.main-link a:active,
+.pages li:first-of-type a:active,
+.button:active {
   color: rgba(0, 0, 0, 0.3)
 }
 
 .new-goods .slogan {
   font-size: 47px;
   line-height: 56px;
-}
-
-.main-link a:hover,
-.main-link a:focus {
-  color: #000000;
-}
-
-.main-link a:active {
-  color: rgba(0, 0, 0, 0.3)
 }
 
 .new-goods .value {
@@ -295,11 +304,11 @@ body {
 }
 
 .filter {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .sort {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .cost {
@@ -321,22 +330,94 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.main-link {
-  padding: 5px;
+.caption {
+  font-size: 16px;
+}
+
+.color,
+.bluetooth {
+  font-size: 14px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.sort a {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort li:first-of-type a,
+.sort li:last-of-type a {
+  color: #000000;
+}
+
+.sort li:first-of-type a:hover,
+.sort li:first-of-type a:focus,
+.sort li:last-of-type a:hover,
+.sort li:last-of-type a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort li:first-of-type a:active,
+.sort li:last-of-type a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort li:not(:first-child):not(:last-child) a:hover,
+.sort li:not(:first-child):not(:last-child) a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort li:not(:first-child):not(:last-child) a:active{
+  color: #000000;
+}
+
+.pagination {
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.prev a,
+.next a {
+  display: block;
+}
+
+.prev a:hover,
+.prev a:focus,
+.next a:hover,
+.next a:focus {
+  background-color:rgba(0, 0, 0, 0.08);
+}
+
+.pages li:not(:first-of-type) a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pages li:not(:first-of-type) a:active {
+  color: #000000;
+}
+
+/*Трансформация градиента*/
+.main-link,
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 40px;
   width: 220px;
-  text-align: center;
-  vertical-align: middle;
   background-image:
     linear-gradient(transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
-  transition-duration: 50ms;
+  transition-duration: 100ms;
 }
 
-.main-link a {
-
-}
-
-.main-link:hover {
+.main-link:hover,
+.button:hover {
   background-color: #f0c52e;
 }
 
+.button {
+  border: none;
+  background-color: transparent;
+}
