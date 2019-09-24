@@ -88,8 +88,12 @@ body {
   opacity: 0.3;
 }
 
-.user-navigation li,
-.site-navigation li,
+.user-navigation,
+.site-navigation,
+.catalog-menu li,
+.catalog-submenu li,
+.user-menu li,
+.site-menu li,
 .new-goods li,
 .popular-goods li,
 .services li,
@@ -102,12 +106,12 @@ body {
   list-style: none;
 }
 
-.user-navigation a,
+.user-menu a,
 .catalog-submenu a {
   color: #000000;
 }
 
-.catalog-menu a,
+.catalog-menu>a,
 .site-menu a,
 .main-link a,
 .slogan,
@@ -140,7 +144,7 @@ body {
   line-height: 48px;
 }
 
-.catalog-menu a,
+.catalog-menu>a,
 .site-menu a,
 .main-link a,
 .services a,
@@ -199,19 +203,29 @@ body {
 
 .popular-goods a {
   display: block;
+  width: 160px;
 }
 
 .popular-goods .item div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(240, 197, 46, 0.5);
+  height: 160px;
 }
 
-.popular-goods .item a:hover div,
-.popular-goods .item a:focus div {
+.popular-goods .item2 div {
+  align-items: flex-end;
+}
+
+
+.popular-goods a:hover div,
+.popular-goods a:focus div {
   background-color: rgba(240, 197, 46);
 }
 
-.popular-goods .item a:active p,
-.popular-goods .item a:active img {
+.popular-goods a:active p,
+.popular-goods a:active img {
   opacity: 0.3;
 }
 
@@ -420,4 +434,161 @@ body {
 .button {
   border: none;
   background-color: transparent;
+}
+
+/*Сеточные стили*/
+
+body {
+  padding-top: 40px;
+  padding-bottom: 0px;
+  min-width: 1200px;
+}
+
+.user-navigation,
+.site-navigation,
+.search,
+.user-menu,
+.catalog-menu,
+.catalog-submenu,
+.site-menu,
+.slides {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-column {
+  width: 560px;
+}
+
+.main-header-column {
+  width: 500px;
+}
+
+.main-header {
+  padding: 60px;
+  min-height: 300px;
+}
+
+.user-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-menu li:first-child {
+  margin-right: auto;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-menu {
+  display: flex;
+}
+
+.site-menu li:last-child {
+  margin-left: auto;
+}
+
+.new-goods {
+  position: relative;
+  top: -100px;
+}
+
+.slider-1,
+.slider-2,
+.slider-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-slider {
+  display: flex;
+  justify-content: center;
+}
+
+.popular-goods-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slides-services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brands-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.breadcrumbs {
+  display: flex;
+}
+
+.wrapper-catalog {
+  display: flex;
+}
+
+.sort {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Декоративные элементы*/
+
+.main-header .logo {
+  position: absolute;
+  margin-top: -78px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
 }

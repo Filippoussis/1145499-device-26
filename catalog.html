@@ -9,61 +9,63 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header container">
     <nav class="main-navigation">
 
-        <div class="logo">
-          <a href="index.html"><img src="img/logo-device-black.svg" alt="Логотип Девайс черного цвета" width="164" height="36"></a>
-        </div>
+      <div class="logo">
+        <a href="index.html"><img src="img/logo-device-black.svg" alt="Логотип Девайс черного цвета" width="164" height="36"></a>
+      </div>
 
-        <div class="user-navigation">
-            <ul class="search">
-              <li>
-                <form >
-                  <input type="search" name="search" placeholder="Поиск по сайту">
-                </form>
-              </li>
-            </ul>
-            <ul class="user-menu">
-              <li><a href="#">Валентин Петухов</a></li>
-              <li class="out"><a href="#">Выйти</a></li>
-              <li><a href="#">Сравнить</a></li>
-              <li><a href="#">Корзина</a></li>
-            </ul>
-          </div>
+      <ul class="user-navigation">
+        <li class="main-header-column">
+          <form class="search">
+            <input type="search" name="search" placeholder="Поиск по сайту">
+          </form>
+        </li>
+        <li class="main-header-column">
+          <ul class="user-menu">
+            <li><a href="#">Валентин Петухов</a></li>
+            <li class="out"><a href="#">Выйти</a></li>
+            <li><a href="#">Сравнить</a></li>
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </li>
+      </ul>
 
-          <div class="site-navigation">
-            <ul class="catalog-menu">
-              <li><a href="#">Каталог товаров</a></li>
-            </ul>
-            <ul class="catalog-submenu">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="catalog.html">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Квадрокоптеры</a></li>
-            </ul>
-            <ul class="site-menu">
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Гарантия</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </div>
+      <ul class="site-navigation">
+        <li class="catalog-menu main-header-column">
+          <a href="#">Каталог товаров</a>
+          <ul class="catalog-submenu">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="catalog.html">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="site-menu main-header-column">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <main>
 
-    <h1 class="page-title">Моноподы для селфи</h1>
-    <div class="breadcrumbs">
-      <ol>
+    <div class="container">
+      <h1 class="page-title">Моноподы для селфи</h1>
+      <ol class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог товаров</a></li>
         <li>Моноподы для селфи</li>
       </ol>
-    </div>
 
+    <div class="wrapper-catalog">
     <section class="filter">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <p class="caption">Фильтр:</p>
@@ -109,10 +111,11 @@
       </form>
     </section>
 
+    <div class="inner-column">
     <section class="sort">
       <h2 class="visually-hidden">Сортировка товаров</h2>
       <p class="caption">Сортировка:</p>
-      <ul>
+      <ul class="sort-list">
         <li><a href="#">По цене</a></li>
         <li><a href="#">По типу</a></li>
         <li><a href="#">По популярности</a></li>
@@ -123,7 +126,7 @@
 
     <section class="gallery">
       <h2 class="visually-hidden">Список моноподов</h2>
-      <ul>
+      <ul class="gallery-list">
         <li>
           <article>
             <h3><a href="#">Любительская селфи-палка</a></h3>
@@ -170,11 +173,14 @@
         <a href="#">Вперед</a>
       </li>
     </ul>
+    </div>
+  </div>
+  </div>
   </main>
 
   <footer class="main-footer">
-
-    <div>
+      <div class="container">
+    <div class="footer-row">
       <div class="logo">
         <a href="index.html"><img src="img/logo-yellow.svg" alt="Логотип Девайс желтого цвета" width="164" height="36"></a>
       </div>
@@ -187,7 +193,7 @@
       </ul>
     </div>
 
-    <div>
+    <div class="footer-row">
       <p>г. Москва, ул. Строителей, 15</p>
       <ul class="site-menu">
         <li><a href="#">Доставка</a></li>
@@ -197,13 +203,21 @@
       <p>Тел.: +7(495)495-95-95</p>
     </div>
 
+    <div class="footer-row">
+
+        <div>Декоративный элемент</div>
+
     <ul class="socials">
       <li><div><a href="#"><img src="img/fb.svg" alt="Facebook" width="32" height="32" aria-label="Facebook"></a></div></li>
       <li><div><a href="#"><img src="img/instagram.svg" alt="Instagram" width="32" height="32" aria-label="Instagram"></a></div></li>
       <li><div><a href="#"><img src="img/twitter.svg" alt="Twitter" width="32" height="32" aria-label="Twitter"></a></div></li>
     </ul>
 
-    <div class="logo-html"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип HTML Academy" width="27" height="35"></a></div>
+    <div class="logo-html">
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип HTML Academy" width="27" height="35"></a>
+    </div>
+    </div>
+    </div>
   </footer>
 
 </body>
