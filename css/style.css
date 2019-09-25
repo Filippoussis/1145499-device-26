@@ -317,14 +317,6 @@ body {
   color: rgba(0, 0, 0, 0.1);
 }
 
-.filter {
-  background-color: rgba(0, 0, 0, 0.08);
-}
-
-.sort {
-  background-color: rgba(0, 0, 0, 0.08);
-}
-
 .cost {
   font-size: 16px;
   line-height: 24px;
@@ -420,7 +412,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 40px;
-  width: 220px;
+  width: 200px;
   background-image:
     linear-gradient(transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
   transition-duration: 100ms;
@@ -451,7 +443,9 @@ body {
 .catalog-menu,
 .catalog-submenu,
 .site-menu,
-.slides {
+.slides,
+.breadcrumbs,
+.gallery-list {
   margin: 0;
   padding: 0;
 }
@@ -539,12 +533,18 @@ body {
   justify-content: space-between;
 }
 
+.page-header {
+  padding: 60px;
+}
+
 .breadcrumbs {
   display: flex;
 }
 
-.wrapper-catalog {
+.catalog-wrapper {
   display: flex;
+  justify-content: space-between;
+  padding-left: 60px;
 }
 
 .sort {
@@ -556,6 +556,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.inner-column {
+  width: 760px;
+  margin-left: 140px;
 }
 
 .gallery-list {
@@ -579,6 +584,12 @@ body {
 .footer-row {
   display: flex;
   justify-content: space-between;
+}
+
+.main-wrapper {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.08) 35.5%, transparent 35.5%, transparent),
+    linear-gradient(rgba(0, 0 , 0, 0.08) 60px, transparent 60px, transparent);
 }
 
 /*Декоративные элементы*/
