@@ -12,8 +12,8 @@
   <header class="main-header container">
     <nav class="main-navigation">
 
-      <div class="logo">
-        <a href="index.html"><img src="img/logo-device-black.svg" alt="Логотип Девайс черного цвета" width="164" height="36"></a>
+      <div class="main-logo">
+        <a class="main-logo-link" href="index.html"><img src="img/logo-device-black.svg" alt="Логотип Девайс черного цвета" width="164" height="36"></a>
       </div>
 
       <ul class="user-navigation">
@@ -85,20 +85,56 @@
     </div>
 
 
-    <div class="main-wrapper">
-
-      <div class="catalog-wrapper container">
-
-        <section class="filter">
-          <h2 class="visually-hidden">Фильтр товаров</h2>
+    <div class="main-wrapper main-wrapper-top">
+      <div class="container">
+        <div class="wrapper-left">
           <p class="caption">Фильтр:</p>
+        </div>
+        <div class="wrapper-right sort top-color">
+          <p class="caption">Сортировка:</p>
+            <ul class="sort-list">
+              <li>
+                <ul class="sort-variant">
+                  <li><a href="#">По цене</a></li>
+                  <li><a href="#">По типу</a></li>
+                  <li><a href="#">По популярности</a></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="up-down-cost">
+                  <li><a class="up-cost" href="#"></a></li>
+                  <li><a class="down-cost" href="#"></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-wrapper main-wrapper-bottom">
+        <div class="container">
+
+
+        <div class="wrapper-left filter">
+
           <form action="https://echo.htmlacademy.ru" method="POST">
-            <div class="range-cost">
-            <p class="legend">Стоимость</p>
-            <label>
-              <input type="range" name="range">
-            </label>
-            </div>
+            <fieldset class="range-filter">
+            <legend class="legend">Стоимость</legend>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="price-label" for="range-min-price">от</label>
+                <input class="price-value" type="text" name="min-price" id="range-min-price" value="0">
+                <label class="price-label" for="range-max-price">до</label>
+                <input class="price-value" type="text" name="max-price" id="range-max-price" value="5000">
+              </div>
+            </fieldset>
             <fieldset>
               <legend class="legend">Цвет</legend>
               <ul class="color">
@@ -139,29 +175,9 @@
             </fieldset>
             <button class="button" type="submit">Показать</button>
           </form>
-        </section>
+        </div>
 
-        <div class="inner-column">
-
-          <section class="sort">
-            <h2 class="visually-hidden">Сортировка товаров</h2>
-            <p class="caption">Сортировка:</p>
-            <ul class="sort-list">
-              <li>
-                <ul class="sort-variant">
-                  <li><a href="#">По цене</a></li>
-                  <li><a href="#">По типу</a></li>
-                  <li><a href="#">По популярности</a></li>
-                </ul>
-              </li>
-              <li>
-                <ul class="up-down-cost">
-                  <li><a class="up-cost" href="#"></a></li>
-                  <li><a class="down-cost" href="#"></a></li>
-                </ul>
-              </li>
-            </ul>
-          </section>
+        <div class="wrapper-right bottom-color">
 
           <section class="gallery">
             <h2 class="visually-hidden">Список моноподов</h2>
@@ -184,8 +200,8 @@
               <li>
                 <article class="product">
                   <div class="product-heading">
-                    <h3><a href="#">Профессиональная селфи-палка</a></h3>
-                    <span class="cost">1500 руб.</span>
+                    <h3><a href="#">Профессиональная<br> селфи-палка</a></h3>
+                    <span class="cost">1 500 руб.</span>
                   </div>
                   <div class="product-image">
                     <img src="img/item-2.jpg" alt="Любительская селфи-палка" width="360" height="380">
@@ -200,7 +216,7 @@
                 <article class="product">
                   <div class="product-heading">
                     <h3><a href="#">Непотопляемая селфи-палка</a></h3>
-                    <span class="cost">2500 руб.</span>
+                    <span class="cost">2 500 руб.</span>
                   </div>
                   <div class="product-image">
                     <img src="img/item-3.jpg" alt="Любительская селфи-палка" width="360" height="380">
@@ -215,7 +231,7 @@
                 <article class="product new">
                   <div class="product-heading">
                     <h3><a href="#">Селфи-палка <q>Следуй за мной</q></a></h3>
-                    <span class="cost">4900 руб.</span>
+                    <span class="cost">4 900 руб.</span>
                   </div>
                   <div class="product-image">
                     <img src="img/item-4.jpg" alt="Любительская селфи-палка" width="360" height="380">
@@ -230,8 +246,8 @@
           </section>
 
             <ul class="pagination">
-              <li class="prev">
-                <a href="#">Назад</a>
+              <li>
+                <a class="prev" href="#">Назад</a>
               </li>
               <li>
                 <ol class="pages">
@@ -240,20 +256,20 @@
                   <li><a href="#">3</a></li>
                 </ol>
               </li>
-              <li class="next">
-                <a href="#">Вперед</a>
+              <li>
+                <a class="next" href="#">Вперед</a>
               </li>
             </ul>
         </div>
       </div>
-    </div>
+      </div>
   </main>
 
   <footer class="main-footer">
     <div class="container">
       <div class="footer-row row-1">
-        <div class="logo">
-          <a href="index.html"><img src="img/logo-yellow.svg" alt="Логотип Девайс желтого цвета" width="164" height="36"></a>
+        <div class="main-logo">
+          <a class="main-logo-link" href="index.html"><img src="img/logo-yellow.svg" alt="Логотип Девайс желтого цвета" width="164" height="36"></a>
         </div>
 
         <ul class="user-menu">
@@ -275,7 +291,7 @@
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <p class="phone">Тел.: +7 (495) 495-95-95</p>
+        <p class="phone">Тел.:<a href="tel:+74954959595"> +7 (495) 495-95-95</a></p>
       </div>
 
       <div class="footer-row row-3">
