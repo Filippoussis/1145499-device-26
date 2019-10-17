@@ -1477,6 +1477,7 @@ a.user-out:active,
 .modal {
   position: fixed;
   display: none;
+  z-index: 1;
 }
 
 .modal-close {
