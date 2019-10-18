@@ -282,6 +282,8 @@ body {
 .search-icon {
   position: absolute;
   align-self: center;
+  top: 50%;
+  transform: translateY(-50%);
   left: 4px;
   width: 16px;
   height: 16px;
@@ -1143,6 +1145,8 @@ a.user-out:active,
 
 .color label::before {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
   content: "";
   align-self: center;
@@ -1154,10 +1158,10 @@ a.user-out:active,
 
 .color-input-checkbox:checked + label::before {
   width: 27px;
-  height: 27px;
+  height: 23px;
   padding-right: 27px;
   background: url(../img/checkbox-on.svg) 50% 50% no-repeat;
-  background-size: 27px 27px;
+  background-size: 27px 23px;
 }
 
 .filter .bluetooth label {
@@ -1203,9 +1207,15 @@ a.user-out:active,
   align-content: center;
 }
 
+.sort-list li {
+  display: flex;
+  align-content: center;
+}
+
 .sort-variant,
 .up-down-cost {
   display: flex;
+  align-items: center;
 }
 
 .up-down-cost {
@@ -1347,7 +1357,10 @@ a.user-out:active,
 .hover-links {
   display: none;
   position: absolute;
-  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  z-index: 1;
 }
 
 .product-image:hover .hover-links {
@@ -1503,7 +1516,16 @@ a.user-out:active,
 }
 
 .modal-letter {
-  padding: 95px 100px;
+  top: 50%;
+  left: 50%;
+  width: 960px;
+  min-height: 552px;
+  margin-left: -480px;
+  margin-top: -276px;
+  padding-top: 78px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #ffffff;
   box-shadow: 0 10px 20px 0 rgba(0,0,0,.2);
 }
 
@@ -1511,6 +1533,10 @@ a.user-out:active,
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.letter label {
+  margin-bottom: 8px;
 }
 
 .letter input {
@@ -1533,7 +1559,8 @@ a.user-out:active,
 }
 
 .letter .letter-text {
-  margin-bottom: 50px;
+  margin-top: 17px;
+  margin-bottom: 42px;
 }
 .modal-show {
   display: block;
@@ -1544,7 +1571,7 @@ a.user-out:active,
   top: 50%;
   left: 50%;
   width: 960px;
-  height: 560px;
+  min-height: 560px;
   margin-left: -480px;
   margin-top: -280px;
 }
@@ -1552,7 +1579,6 @@ a.user-out:active,
 .modal-map iframe {
   position: relative;
   z-index: 2;
-  border: none;
 }
 
 .modal-map div {
@@ -1561,6 +1587,11 @@ a.user-out:active,
   top: 0;
   left: 0;
   margin: 0;
+  padding: 0;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 @keyframes bounce {
@@ -1578,5 +1609,27 @@ a.user-out:active,
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
