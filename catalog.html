@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Девайс - интернет-магазин гаджетов</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="catalog-page">
@@ -13,14 +13,16 @@
     <nav class="main-navigation">
 
       <div class="main-logo">
-        <a class="main-logo-link" href="index.html"><img src="img/logo-device-black.svg" alt="Логотип Девайс черного цвета" width="164" height="36"></a>
+        <a class="main-logo-link" href="index.html" aria-label="Переход на главную страницу DEVICE">
+          <img src="img/logo-device-black.svg" alt="Логотип Девайс черного цвета" width="164" height="36">
+        </a>
       </div>
 
       <ul class="user-navigation">
         <li class="main-header-column">
           <form class="search" action="https://echo.htmlacademy.ru" method="POST">
             <label class="search-icon" for="search"></label>
-            <input class="search-input" type="text" name="search" id="search" placeholder="Поиск по сайту" autocomplete="off">
+            <input class="search-input" type="text" name="search" id="search" placeholder="Поиск по сайту" autocomplete="off" aria-label="Поле поиска">
             <button class="search-button" type="submit">Найти</button>
           </form>
         </li>
@@ -102,8 +104,8 @@
               </li>
               <li>
                 <ul class="up-down-cost">
-                  <li><a class="up-cost" href="#"></a></li>
-                  <li><a class="down-cost" href="#"></a></li>
+                  <li><a class="up-cost" href="#" aria-label="Сортировка по возрастанию цены"></a></li>
+                  <li><a class="down-cost" href="#" aria-label="Сортировка по убыванию цены"></a></li>
                 </ul>
               </li>
             </ul>
@@ -189,7 +191,7 @@
                     <span class="cost">500 руб.</span>
                   </div>
                   <div class="product-image">
-                    <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                    <img src="img/item-1.jpg" alt="Изображение товара - Любительская селфи-палка" width="360" height="380">
                     <div class="hover-links">
                       <button type="button" class="add-to-cart button">В корзину</button>
                       <button type="button" class="add-to-compare">Добавить к сравнению</button>
@@ -204,7 +206,7 @@
                     <span class="cost">1 500 руб.</span>
                   </div>
                   <div class="product-image">
-                    <img src="img/item-2.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                    <img src="img/item-2.jpg" alt="Изображение товара - Профессиональная селфи-палка" width="360" height="380">
                     <div class="hover-links">
                       <button type="button" class="add-to-cart button">В корзину</button>
                       <button type="button" class="add-to-compare">Добавить к сравнению</button>
@@ -219,7 +221,7 @@
                     <span class="cost">2 500 руб.</span>
                   </div>
                   <div class="product-image">
-                    <img src="img/item-3.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                    <img src="img/item-3.jpg" alt="Изображение товара - Непотопляемая селфи-палка" width="360" height="380">
                     <div class="hover-links">
                       <button type="button" class="add-to-cart button">В корзину</button>
                       <button type="button" class="add-to-compare">Добавить к сравнению</button>
@@ -234,7 +236,7 @@
                     <span class="cost">4 900 руб.</span>
                   </div>
                   <div class="product-image">
-                    <img src="img/item-4.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                    <img src="img/item-4.jpg" alt="Изображение товара - Селфи-палка 'Следуй за мной'" width="360" height="380">
                     <div class="hover-links">
                       <button type="button" class="add-to-cart button">В корзину</button>
                       <button type="button" class="add-to-compare">Добавить к сравнению</button>
@@ -269,7 +271,9 @@
     <div class="container">
       <div class="footer-row row-1">
         <div class="main-logo">
-          <a class="main-logo-link" href="index.html"><img src="img/logo-yellow.svg" alt="Логотип Девайс желтого цвета" width="164" height="36"></a>
+          <a class="main-logo-link" href="index.html" aria-label="Переход на главную страницу DEVICE">
+            <img src="img/logo-yellow.svg" alt="Логотип Девайс желтого цвета" width="164" height="36">
+          </a>
         </div>
 
         <ul class="user-menu">
@@ -296,13 +300,15 @@
 
       <div class="footer-row row-3">
         <ul class="socials">
-          <li><div><a href="#"><img src="img/fb.svg" alt="Facebook" width="32" height="32" aria-label="Facebook"></a></div></li>
-          <li><div><a href="#"><img src="img/instagram.svg" alt="Instagram" width="32" height="32" aria-label="Instagram"></a></div></li>
-          <li><div><a href="#"><img src="img/twitter.svg" alt="Twitter" width="32" height="32" aria-label="Twitter"></a></div></li>
+          <li><div><a href="#"><img src="img/fb.svg" alt="Иконка социальной сети Facebook" width="32" height="32" aria-label="Facebook"></a></div></li>
+          <li><div><a href="#"><img src="img/instagram.svg" alt="Иконка социальной сети Instagram" width="32" height="32" aria-label="Instagram"></a></div></li>
+          <li><div><a href="#"><img src="img/twitter.svg" alt="Иконка социальной сети Twitter" width="32" height="32" aria-label="Twitter"></a></div></li>
         </ul>
 
         <div class="logo-html">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип HTML Academy" width="27" height="35"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Переход на страницу интенсивов HTML Academy">
+            <img src="img/logo-html.svg" alt="Логотип HTML Academy" width="27" height="35">
+          </a>
         </div>
       </div>
     </div>

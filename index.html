@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Девайс - интернет-магазин гаджетов</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
         <li class="main-header-column">
           <form class="search" action="https://echo.htmlacademy.ru" method="POST">
             <label class="search-icon" for="search"></label>
-            <input class="search-input" type="text" name="search" id="search" placeholder="Поиск по сайту" autocomplete="off">
+            <input class="search-input" type="text" name="search" id="search" placeholder="Поиск по сайту" autocomplete="off" aria-label="Поле поиска">
             <button class="search-button" type="submit">Найти</button>
           </form>
         </li>
@@ -29,7 +29,7 @@
           <ul class="user-menu">
             <li>
               <ul class="personal-account">
-                <li><a class="user-enter" href="#">Войти</a></li>
+                <li><a class="user-enter" href="login.html">Войти</a></li>
               </ul>
             </li>
             <li><a class="compare" href="#">Сравнить</a></li>
@@ -81,16 +81,16 @@
       <h2 class="visually-hidden">Новые товары</h2>
       <input type="radio" name="toggle" id="btn-1" checked>
       <input type="radio" name="toggle" id="btn-2">
-      <input type="radio" name="toggle" id="btn-3">
+      <input type="radio" name="toggle" id="btn-3" >
       <div class="slider-controls">
-        <label for="btn-1"></label>
-        <label for="btn-2"></label>
-        <label for="btn-3"></label>
+        <label for="btn-1" aria-label="Первая позиция переключателя слайдов"></label>
+        <label for="btn-2" aria-label="Вторая позиция переключателя слайдов"></label>
+        <label for="btn-3" aria-label="Третия позиция переключателя слайдов"></label>
       </div>
       <ul class="slides-new-goods">
         <li class="sliders slider-1">
           <div class="image-slider main-column">
-            <img src="img/slider-1.png" alt="Селфи-палка" width="384" height="486">
+            <img src="img/slider-1.png" alt="Изображение первого слайда - Селфи-палка" width="384" height="486">
           </div>
           <div class="slider-content slider-content-1 main-column">
             <p class="slogan">Делай селфи,<br>
@@ -114,7 +114,7 @@
         </li>
         <li class="sliders slider-2">
           <div class="image-slider main-column">
-            <img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
+            <img src="img/slider-2.png" alt="Изображение второго слайда - Фитнес-браслет" width="345" height="485">
           </div>
           <div class="slider-content slider-content-2 main-column">
             <p class="slogan">Худеем,<br>
@@ -134,7 +134,7 @@
         </li>
         <li class="sliders slider-3">
           <div class="image-slider main-column">
-            <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
+            <img src="img/slider-3.png" alt="Изображение третьего слайда - Квадрокоптер" width="526" height="334">
           </div>
           <div class="slider-content slider-content-3 main-column">
             <p class="slogan">Порхает как бабочка,
@@ -162,38 +162,38 @@
       <ul class="popular-goods-list">
         <li>
           <div class="item"><a href="#">
-            <div><img src="img/popular-1.svg" alt="Виртуальная реальность" width="97" height="55"></div>
+            <div><img src="img/popular-1.svg" alt="Изображение к разделу - Виртуальная реальность" width="97" height="55"></div>
             <p>Виртуальная реальность</p>
           </a></div>
         </li>
         <li>
           <div class="item item-2"><a href="catalog.html">
-            <div><img src="img/popular-2.svg" alt="Моноподы для селфи" width="87" height="117"></div>
+            <div><img src="img/popular-2.svg" alt="Изображение к разделу - Моноподы для селфи" width="87" height="117"></div>
             <p>Моноподы<br>
             для селфи</p>
           </a></div>
         </li>
         <li>
           <div class="item"><a href="#">
-            <div><img src="img/popular-3.svg" alt="Экшн-камеры" width="72" height="88"></div>
+            <div><img src="img/popular-3.svg" alt="Изображение к разделу - Экшн-камеры" width="72" height="88"></div>
             <p>Экшн-камеры</p>
           </a></div>
         </li>
         <li>
           <div class="item"><a href="#">
-            <div><img src="img/popular-4.svg" alt="Фитнес-браслеты" width="108" height="66"></div>
+            <div><img src="img/popular-4.svg" alt="Изображение к разделу - Фитнес-браслеты" width="108" height="66"></div>
             <p>Фитнес-браслеты</p>
           </a></div>
         </li>
         <li>
           <div class="item"><a href="#">
-            <div><img src="img/popular-5.svg" alt="Умные часы" width="57" height="98"></div>
+            <div><img src="img/popular-5.svg" alt="Изображение к разделу - Умные часы" width="57" height="98"></div>
             <p>Умные часы</p>
           </a></div>
         </li>
         <li>
           <div class="item"><a href="#">
-            <div><img src="img/popular-6.svg" alt="Квадрокоптеры" width="133" height="70"></div>
+            <div><img src="img/popular-6.svg" alt="Изображение к разделу - Квадрокоптеры" width="133" height="70"></div>
             <p>Квадрокоптеры</p>
           </a></div>
         </li>
@@ -244,27 +244,27 @@
       <h2 class="visually-hidden">Бренды</h2>
       <ul class="brands-list">
         <li>
-            <a href="#">
-              <img class="color-image" src="img/brand-color-1.jpg" alt="Бренд-1-цветной" width="260" height="100">
-              <img class="monochrome-image" src="img/brand-1.jpg" alt="Бренд-1" width="260" height="100">
+            <a href="#" aria-label="Переход на страницу Бренда №1">
+              <img class="color-image" src="img/brand-color-1.jpg" alt="Изображение цветное Бренда №1" width="260" height="100">
+              <img class="monochrome-image" src="img/brand-1.jpg" alt="Изображение монохромное Бренда №1" width="260" height="100">
             </a>
         </li>
         <li>
-            <a href="#">
-              <img class="color-image" src="img/brand-color-2.jpg" alt="Бренд-2-цветной" width="260" height="100">
-              <img class="monochrome-image" src="img/brand-2.jpg" alt="Бренд-2" width="260" height="100">
+            <a href="#" aria-label="Переход на страницу Бренда №2">
+              <img class="color-image" src="img/brand-color-2.jpg" alt="Изображение цветное Бренда №2" width="260" height="100">
+              <img class="monochrome-image" src="img/brand-2.jpg" alt="Изображение монохромное Бренда №2" width="260" height="100">
             </a>
         </li>
         <li>
-            <a href="#">
-              <img class="color-image" src="img/brand-color-3.jpg" alt="Бренд-3-цветной" width="260" height="100">
-              <img class="monochrome-image" src="img/brand-3.jpg" alt="Бренд-3" width="260" height="100">
+            <a href="#" aria-label="Переход на страницу Бренда №3">
+              <img class="color-image" src="img/brand-color-3.jpg" alt="Изображение цветное Бренда №3" width="260" height="100">
+              <img class="monochrome-image" src="img/brand-3.jpg" alt="Изображение монохромное Бренда №3" width="260" height="100">
             </a>
         </li>
         <li>
-            <a href="#">
-              <img class="color-image" src="img/brand-color-4.jpg" alt="Бренд-4-цветной" width="260" height="100">
-              <img class="monochrome-image" src="img/brand-4.jpg" alt="Бренд-4" width="260" height="100">
+            <a href="#" aria-label="Переход на страницу Бренда №4">
+              <img class="color-image" src="img/brand-color-4.jpg" alt="Изображение цветное Бренда №4" width="260" height="100">
+              <img class="monochrome-image" src="img/brand-4.jpg" alt="Изображение монохромное Бренда №4" width="260" height="100">
             </a>
         </li>
       </ul>
@@ -290,9 +290,11 @@
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
         проверить работоспособность покупки. Всякое бывает.</p>
         <div class="mini-map">
-          <a class="map-link" href="#"><img src="img/map.jpg" alt="Мини-карта местоположения офиса Девайс" width="560" height="222"></a>
+          <a class="map-link" href="map.html" aria-label="Переход на страницу с картой местоположения офиса: г. Москва, ул. Строителей, 15">
+            <img src="img/map.jpg" alt="Мини-карта местоположения офиса Девайс: г. Москва, ул. Строителей, 15" width="560" height="222">
+          </a>
         </div>
-        <p><a class="main-link letter-link" href="#">Напишите нам</a></p>
+        <p><a class="main-link letter-link" href="write-us.html">Напишите нам</a></p>
       </section>
     </div>
   </main>
@@ -323,13 +325,15 @@
       <div class="footer-row row-3">
 
         <ul class="socials">
-          <li><div><a href="#"><img src="img/fb.svg" alt="Facebook" width="32" height="32" aria-label="Facebook"></a></div></li>
-          <li><div><a href="#"><img src="img/instagram.svg" alt="Instagram" width="32" height="32" aria-label="Instagram"></a></div></li>
-          <li><div><a href="#"><img src="img/twitter.svg" alt="Twitter" width="32" height="32" aria-label="Twitter"></a></div></li>
+          <li><div><a href="#"><img src="img/fb.svg" alt="Иконка социальной сети Facebook" width="32" height="32" aria-label="Facebook"></a></div></li>
+          <li><div><a href="#"><img src="img/instagram.svg" alt="Иконка социальной сети Instagram" width="32" height="32" aria-label="Instagram"></a></div></li>
+          <li><div><a href="#"><img src="img/twitter.svg" alt="Иконка социальной сети Twitter" width="32" height="32" aria-label="Twitter"></a></div></li>
         </ul>
 
         <div class="logo-html">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип HTML Academy" width="27" height="35"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Переход на страницу интенсивов HTML Academy">
+            <img src="img/logo-html.svg" alt="Логотип HTML Academy" width="27" height="35">
+          </a>
         </div>
       </div>
     </div>
@@ -361,7 +365,7 @@
 
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как к нам проехать</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947375!2d37.52742931620645!3d55.68703400452967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1571321728575!5m2!1sru!2sru" width="960" height="560"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947375!2d37.52742931620645!3d55.68703400452967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1571321728575!5m2!1sru!2sru" width="960" height="560" style="border: 0;" allowfullscreen></iframe>
     <div>
       <img src="img/map-big.png" alt="Большая-карта местоположения офиса Девайс" width="960" height="560">
     </div>
@@ -370,8 +374,7 @@
     </button>
   </section>
 
-  <script src="js/popup.js"></script>
-  <script src="js/map.js"></script>
+  <script src="js/js.min.js"></script>
 </body>
 
 </html>
