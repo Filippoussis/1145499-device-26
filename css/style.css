@@ -139,28 +139,29 @@ body {
 .catalog-page a.main-logo-link:focus,
 .logo-html a:hover,
 .logo-html a:focus,
-.user-menu .user-enter:hover::before,
-.user-menu .user-enter:focus::before,
-.user-menu .user-account:hover::before,
-.user-menu .user-account:focus::before,
-.user-menu .cart:hover::before,
-.user-menu .cart:focus::before,
-.user-menu .compare:hover::before,
-.user-menu .compare:focus::before {
+.user-enter:hover::before,
+.user-enter:focus::before,
+.user-account:hover::before,
+.user-account:focus::before,
+.cart:hover::before,
+.cart:focus::before,
+.compare:hover::before,
+.compare:focus::before {
   opacity: 0.6;
 }
 
 .catalog-page a.main-logo-link:active,
 .logo-html a:active,
-.user-menu .user-enter:active::before,
-.user-menu .user-account:active::before,
-.user-menu .cart:active::before,
-.user-menu .compare:active::before {
+.user-enter:active::before,
+.user-account:active::before,
+.cart:active::before,
+.compare:active::before {
   opacity: 0.3;
 }
 
 .user-menu a,
-.catalog-submenu a {
+.catalog-submenu a,
+.page-item.first-page a {
   color: #000000;
 }
 
@@ -225,10 +226,8 @@ body {
 .site-menu a:focus,
 .gallery a:hover,
 .gallery a:focus,
-.pages li:first-of-type a:hover,
-.pages li:first-of-type a:hover,
-.pages li:not(:first-of-type) a:hover,
-.pages li:not(:first-of-type) a:hover {
+.page-item a:hover,
+.page-item a:focus {
   color: rgba(0, 0, 0, 0.6)
 }
 
@@ -240,7 +239,7 @@ body {
 .prev a:active,
 .next a:active,
 .main-link a:active,
-.pages li:first-of-type a:active,
+.page-item.first-page a:active,
 .button:active {
   color: rgba(0, 0, 0, 0.3)
 }
@@ -381,7 +380,7 @@ body {
   flex-wrap: wrap;
 }
 
-.main-header .site-menu li:last-child {
+.main-header .site-menu-contacts {
   margin-left: auto;
   margin-right: -4px;
 }
@@ -530,25 +529,25 @@ li.catalog-menu:focus .catalog-submenu {
   display: flex;
 }
 
-.new-goods table {
+.new-goods .features {
   border-collapse: collapse;
   border-spacing: 0;
   margin-top: 50px;
 }
 
-.new-goods table td {
+.features td {
   padding: 0;
 }
 
-.new-goods table td:first-of-type {
+.features td:first-of-type {
   width: 160px;
 }
 
-.new-goods table td:nth-of-type(2) {
+.features td:nth-of-type(2) {
   width: 140px;
 }
 
-.new-goods .parameter td {
+.parameter td {
   padding-top: 7px;
 }
 
@@ -588,7 +587,7 @@ li.catalog-menu:focus .catalog-submenu {
   justify-content: space-between;
 }
 
-.popular-goods .item div {
+.item div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -597,7 +596,7 @@ li.catalog-menu:focus .catalog-submenu {
   background-color: rgba(240, 197, 46, 0.5);
 }
 
-.popular-goods .item-2 div {
+.item-2 div {
   align-items: flex-end;
 }
 
@@ -606,13 +605,13 @@ li.catalog-menu:focus .catalog-submenu {
   width: 160px;
 }
 
-.popular-goods a:hover div,
-.popular-goods a:focus div {
+.popular-goods-link:hover div,
+.popular-goods-link:focus div {
   background-color: rgba(240, 197, 46);
 }
 
-.popular-goods a:active p,
-.popular-goods a:active img {
+.popular-goods-link:active p,
+.popular-goods-link:active img {
   opacity: 0.3;
 }
 
@@ -778,13 +777,12 @@ li.catalog-menu:focus .catalog-submenu {
   margin-top: 65px;
   margin-bottom: 55px;
 }
-
-.about-us .transport li {
+.transport li {
   position: relative;
   padding-left: 35px;
 }
 
-.about-us .transport li::before {
+.transport li::before {
   content: "";
   position: absolute;
   top: 16px;
@@ -815,17 +813,17 @@ li.catalog-menu:focus .catalog-submenu {
   margin-bottom: 18px;
 }
 
-.main-footer .user-menu a {
+.footer.user-menu a {
   line-height: 36px;
   color: rgba(255, 255, 255, 0.7);
 }
 
-.main-footer .user-menu a:hover,
-.main-footer .user-menu a:focus {
+.footer.user-menu a:hover,
+.footer.user-menu a:focus {
   color: #ffffff;
 }
 
-.main-footer .user-menu a:active {
+.footer.user-menu a:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -836,16 +834,16 @@ li.catalog-menu:focus .catalog-submenu {
   width: 430px;
 }
 
-.main-footer .site-menu a {
+.footer.site-menu a {
   color: #ffffff;
 }
 
-.main-footer .site-menu a:hover,
-.main-footer .site-menu a:focus {
+.footer.site-menu a:hover,
+.footer.site-menu a:focus {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.main-footer .site-menu a:active {
+.footer.site-menu a:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -900,7 +898,7 @@ li.catalog-menu:focus .catalog-submenu {
   text-align: end;
 }
 
-.main-footer .phone a {
+.phone a {
   color: #ffffff;
 }
 
@@ -917,16 +915,26 @@ li.catalog-menu:focus .catalog-submenu {
   width: 140px;
 }
 
+.socials a {
+  display: block;
+}
+
 .socials img {
   opacity: 0.3;
 }
 
-.socials a:hover img,
-.socials a:focus img {
+a.facebook:hover img,
+a.facebook:focus img,
+a.instagram:hover img,
+a.instagram:focus img,
+a.twitter:hover img,
+a.twitter:focus img {
   opacity: 0.6;
 }
 
-.socials a:active img {
+a.facebook:active img,
+a.instagram:active img,
+a.twitter:active img {
   opacity: 0.1;
 }
 
@@ -1166,12 +1174,12 @@ a.user-out:active,
   background-size: 27px 23px;
 }
 
-.filter .bluetooth label {
+.bluetooth label {
   display: flex;
 
 }
 
-.filter .bluetooth label::before {
+.bluetooth label::before {
   position: absolute;
   content: "";
   top: 50%;
@@ -1272,25 +1280,28 @@ a.user-out:active,
   margin-right: 30px;
 }
 
-.sort-variant li:first-of-type a {
+.sort-variant-price a {
   color: #000000;
 }
 
-.sort-variant li:not(:first-of-type) a:hover,
-.sort-variant li:not(:first-of-type) a:focus {
+.sort-variant-type a:hover,
+.sort-variant-type a:focus,
+.sort-variant-popular a:hover,
+.sort-variant-popular a:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.sort-variant li:not(:first-of-type) a:active {
+.sort-variant-type a:active,
+.sort-variant-popular a:active {
   color: #000000;
 }
 
-.sort-variant li:first-of-type a:hover,
-.sort-variant li:first-of-type a:focus {
+.sort-variant-price a:hover,
+.sort-variant-price a:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.sort-variant li:first-of-type a:active {
+.sort-variant-price a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1312,7 +1323,7 @@ a.user-out:active,
   margin-bottom: 48px;
 }
 
-.product .product-heading h3 {
+.product-heading h3 {
   margin: 0;
   padding: 0;
   width: 260px;
@@ -1422,12 +1433,12 @@ a.user-out:active,
   margin: 0 0 0 15px;
   min-width: 90px;
 }
-
-.pages li:not(:first-of-type) a {
+.pages a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.pages li:not(:first-of-type) a:active {
+.page-item.second-page a:active,
+.page-item.third-page a:active {
   color: #000000;
 }
 
